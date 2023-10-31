@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'iDroid';
+    src: url('fonts/IDroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('fonts/Bebas.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*:root {
+    --cor0: #071F66;
+    --cor1: #1f22d8; 
+    --cor2: #d0f3f0b2;
+    --cor3: #2cf8e483;
+    --cor4: #8ea8f5;
+
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas', cursive;
+    --fonte2: 'iDroid', sans-serif;
+}*/
+
+.cabeçalho {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 10px;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+
+.titulo {
+    font-size: 1.5em;
+    font-family: 'iDroid', cursive;
+    color: #071F66;
+    margin: 15px;
+    text-align: left;
+    background-image: linear-gradient(to right, #2cf8e483, #f9fcfbb2);
+    padding-left: 5px;
+}
+
+.História {
+    padding-top: 1px;
+}
+
+div.video {
+    position: relative; /*para preservar a posição original em diferentes tamanhos do doc*/
+    background-color: #071f66;
+    height: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 15px;
+    padding-bottom: 50%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%; /*Faz o deslocamento de cima */
+    left: 5%; /*Faz o deslocamento da esquerda*/
+    width: 90%; /*Faz o deslocamento dos lados*/
+    height: 90%; /*Faz o deslocamento da altura*/
+}
+
+div#rodape {
+    border-radius: 10px;
+    background-color: #7abbec50;
+    text-align: justify;
+    margin: 10px;
+    padding: 0px 10px;
+    box-shadow: 2px 3px 4px 0px #064474af;
+}
+
+#tit-rodape {
+    background-color: #071F66; 
+    border-radius: 10px 10px 0px 0px; 
+    padding: 7px;
+    margin-left: -10px;
+    margin-right: -10px;
+    color: white;
+    font-family: 'Bebas', cursive;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 25px;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+header > h1 {
+    font-size: 2.5em;
+}
+
+header > p {
+    font-size: 1.2em;
+}
+
+.name {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header {
+    background-image: linear-gradient(to top, #071F66, #1f22d8);
+    font-family: 'Bebas', sans-serif;
+    font-size: large;
+    letter-spacing: 1px;
+    padding-top: 15px;
+    box-shadow: 0px 7px 5px rgb(0, 0, 0, 0.192);
+}
+
+nav {
+    padding-bottom: 10px;
+}
+
+nav li:hover {
+    background-color: #d0f3f0b2;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+nav ul {
+    list-style-type: none; /*remove os marcadores de lista padrão*/
+    padding: 0; /*Isso remove qualquer espaço em branco extra ao redor da lista*/
+    margin: 0px 0px 0px 5px;
+}
+
+a:hover {
+    color: #071F66;
+    text-decoration: underline;
+}
+
+a {
+    color: white;
+}
+
+nav li {
+    display: inline; /*Isso alinhará os itens da lista horizontalmente*/
+    margin-right: 20px; /*Adiciona margem entre os itens da lista*/
+    transition-duration: 0.5s;
+}
+
+body {
+    margin: 0;
+    background-color: #738ee69f;
+}
+
+main {
+    background-color: white;
+    min-width: 400px;
+    max-width: 800px;
+    height: auto;
+    padding: 1px 10px 0px 10px;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 0px 10px #1a14a2b8  ;
+}
+
+footer {
+    color: white;
+    background-color: #071F66;
+    margin-bottom: -16px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    font-size: 0.8em;
+}
+
+#listas {
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+
+.versões {
+    color: black;
+    text-decoration: none;
+}
